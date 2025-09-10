@@ -1,0 +1,26 @@
+::selection {
+    background: #E0AFA0; /* Highlight background color */
+    color: #463F3A;      /* Text color */
+}
+
+body {
+    background-color: #BCB8B1;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -1rem;
+}
