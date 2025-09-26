@@ -18,23 +18,19 @@
 </head>
 <body>
     <div class="titlebar">
+        <div class="titlebarHeader">珍珠奶茶 BOT</div>
         <div class="control-container">
             <img class="win-control" src="../assets/minimize.svg" alt="Minimize">
-            <img class="win-control" src="../assets/maximize.svg" alt="Maximize" style="width: 35px; height: 35px; margin-bottom: 1px;">
+            <img class="win-control" src="../assets/maximize.svg" alt="Maximize" style="width: 25px; height: 25px; margin-bottom: 2px;">
             <img class="win-control" src="../assets/close.svg" alt="Close">
         </div>
     </div>
     <div class="container">
-        <div>
-            <div class="title1">珍珠奶茶</div>
-            <div class="title2">BOT</div>
-        </div>
-        <br>
         <div class="gen-container">
             <div class="gen-header"><b>Milk Tea(s):</b></div>
             <div id="gen-1" class="gen-content"></div>
             <div id="gen-2" class="gen-content"></div>
-            <br><br>
+            <br>
             <div class="gen-header"><b>Additive(s):</b></div>
             <div id="gen-3" class="gen-content"></div>
             <div id="gen-4" class="gen-content"></div>
@@ -49,10 +45,14 @@
         </div>
         <br>
         <div class="button-container">
-            <div id="retry-new" class="button">RETRY</div>
+            <img id="save" class="save" src="../assets/save.png" alt="Save"v>
+            <div id="retry-new" class="button" onclick="location.reload()">RETRY</div>
             <div id="back" class="button">BACK</div>
         </div>
         <br>
+        <div class="map">(B)oba (J)elly (P)opping</div>
+        <br>
+        <div class="map">Left-Click: Highlight / Right-Click: Remove</div>
     </div>
     <div style="position: absolute; margin-top: 2rem; right: 0;">
             <div class="boba-container">
@@ -64,6 +64,7 @@
                 <div class="boba-back" style="top: 16rem; right: 0;"></div>
             </div>
     </div>
+    <script src="../scripts/gen-new.js"></script>
     <script src="../scripts/navigation.js"></script>
     <script src="../scripts/review.js"></script>
     <script src="../scripts/window-controls.js"></script>

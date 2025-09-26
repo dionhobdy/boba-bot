@@ -6,10 +6,17 @@
     width: 8rem;
     border-radius: 100px;
     opacity: 0.15;
-    z-index: -1;
+  /* Make decorative elements ignore pointer events so they don't block UI controls */
+  pointer-events: none;
+  z-index: 0;
 }
 
 .boba-container {
   width: 25rem;
   height: 15rem;
+}
+
+/* Make the container itself ignore pointer events so it doesn't block UI controls */
+.boba-container {
+  pointer-events: none;
 }

@@ -27,6 +27,35 @@
     100% { color: #8A817C; }
 }
 
+.map {
+    color:#8A817C;
+    display: inline-block;
+    font-family: "Chiron Hei HK", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 1.25rem;
+    font-style: normal;
+    opacity: .5;
+}
+
+.rating-label {
+    color:#8A817C;
+    display: inline-block;
+    font-family: "Chiron Hei HK", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 1.5rem;
+    font-style: normal;
+}
+
+.rating-option {
+    font-family: "Chiron Hei HK", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 1.25rem;
+    font-style: normal;
+}
+
 .subtitle {
     color:#8A817C;
     display: inline-block;

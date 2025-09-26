@@ -1,31 +1,27 @@
 Tapioca
-Jelly
-Pudding
-Aloe Vera
-Lychee Coconut Jelly
-Rainbow Jelly
-Mango Jelly
-Coffee Jelly
-Grass Jelly
-Red Bean
-Crystal Boba
-Mini Boba
-Egg Pudding
+AloeVera
+LycheeCoconut(J)
+Rainbow(J)
+Mango(J)
+Coffee(J)
+Grass(J)
+Crystal(B)
+Mini(B)
 Taro
-Coconut Meat
-Ice Cream
-Whipped Cream
-Strawberry Popping Boba
-Mango Popping Boba
-Blueberry Popping Boba
-Passion Fruit Popping Boba
-Peach Popping Boba
-Lychee Popping Boba
-Pineapple Popping Boba
-Grape Popping Boba
-Pomegranate Popping Boba
-Watermelon Popping Boba
-Orange Popping Boba
-Melon Popping Boba
-Kiwi Popping Boba
-Green Apple Popping Boba
+CoconutMeat
+IceCream
+WhippedCream
+Strawberry(PB)
+Mango(PB)
+Blueberry(PB)
+PassionFruit(PB)
+Peach(PB)
+Lychee(PB)
+Pineapple(PB)
+Grape(PB)
+Pomegranate(PB)
+Watermelon(PB)
+Orange(PB)
+Melon(PB)
+Kiwi(PB)
+GreenApple(PB)

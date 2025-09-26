@@ -1,13 +1,17 @@
 const { app, BrowserWindow, ipcMain } = require('electron/main')
 const path = require('node:path')
 
+let win;
+
 function createWindow () {
-  const win = new BrowserWindow({
+  win = new BrowserWindow({
     width: 800,
     height: 600,
     frame: false,
     autoHideMenuBar: true,
     webPreferences: {
+      nodeIntegration: true,
+      contextIsolation: false,
       preload: path.join(__dirname, 'preload.js')
     }
   })
@@ -32,14 +36,19 @@ app.on('window-all-closed', () => {
 })
 
 ipcMain.on('window-minimize', () => {
-  win.minimize();
+  const target = BrowserWindow.getFocusedWindow() || win;
+  if (target && !target.isDestroyed()) target.minimize();
 });
 
 ipcMain.on('window-maximize', () => {
-  if (win.isMaximized()) win.unmaximize();
-  else win.maximize();
+  const target = BrowserWindow.getFocusedWindow() || win;
+  if (target && !target.isDestroyed()) {
+    if (target.isMaximized()) target.unmaximize();
+    else target.maximize();
+  }
 });
 
 ipcMain.on('window-close', () => {
-  win.close();
+  const target = BrowserWindow.getFocusedWindow() || win;
+  if (target && !target.isDestroyed()) target.close();
 });
